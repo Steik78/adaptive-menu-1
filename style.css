@@ -93,3 +93,50 @@ img{
 }
 /* --------------- /базовые настройки ---------*/
 
+/*--------------Start header-------------*/
+.main-header{
+	display: flex;
+	align-items: center;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 30px 20px;
+    background-color: #f5f4ff;
+}
+.main-header-form, .logo{
+	flex: 1;
+}
+.main-navigation{
+	flex: 2
+}
+.main-navigation-item{
+	text-align: center;
+}
+.main-navigation-list{
+	display: inline-block;
+	margin: 0 10px;
+}
+.main-navigation-list a{
+	color:#0075bf;
+	font-size: 18px;
+	text-decoration: none;
+}
+.main-navigation-list a:hover{
+	text-decoration: underline;
+}
+.main-header-form{
+	text-align: right;
+}
+.main-header-form button{
+	padding: 8px 20px;
+	border: 1px solid #0075bf;
+	margin-left: 20px;
+	border-radius: 7px;
+}
+.main-header-form button:first-child{
+	color: #0075bf;
+}
+.main-header-form button:last-child{
+	color:#fff;
+	background-color: #0075bf;
+}
+/*--------------End header-------------*/
