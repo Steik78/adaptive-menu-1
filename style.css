@@ -100,7 +100,8 @@ img{
 	max-width: 1240px;
 	margin: 0 auto;
 	padding: 30px 20px;
-    background-color: #f5f4ff;
+	background-color: #f5f4ff;
+	 
 }
 .main-header-form, .logo{
 	flex: 1;
@@ -117,7 +118,7 @@ img{
 }
 .main-navigation-list a{
 	color:#0075bf;
-	font-size: 18px;
+	font-size: 1.125em;
 	text-decoration: none;
 }
 .main-navigation-list a:hover{
@@ -131,6 +132,7 @@ img{
 	border: 1px solid #0075bf;
 	margin-left: 20px;
 	border-radius: 7px;
+	cursor: pointer;
 }
 .main-header-form button:first-child{
 	color: #0075bf;
@@ -139,4 +141,98 @@ img{
 	color:#fff;
 	background-color: #0075bf;
 }
+.main-header-form button:first-child:hover{
+	box-shadow: 0px 0px 2px 2px rgba(77, 123, 248, 0.7)
+}
+.main-header-form button:last-child:hover{
+	box-shadow: 0px 0px 2px 2px rgba(167, 187, 209, 0.7)
+}
+.main-header-form button:first-child:active{
+	box-shadow: 0px 0px 2px 1px rgba(77, 123, 248, 0.7)
+}
+.main-header-form button:last-child:active{
+	box-shadow: 0px 0px 2px 1px rgba(167, 187, 209, 0.7)
+}
 /*--------------End header-------------*/
+
+@media screen and (max-width: 1020px) {
+	.main-header{
+		flex-wrap: wrap;
+	}
+	 
+	.main-header-form{
+		margin-bottom: 15px; 
+		order:2;
+		 
+	}
+	.main-navigation{
+		margin: 20px 0 0 0;
+		order:3;
+		flex: none;
+		width: 100%; 
+		 
+	}
+	.main-navigation-item{
+		text-align: left;
+	}
+	.main-header-form button{
+		margin-left: 5px;;
+	}
+	.main-header-form button{
+		padding: 5px 10px;
+	}	
+	.main-navigation-list{
+		margin: 0 5px;
+	} 
+	.main-navigation-list a{
+		font-size: 1.1em;
+	}
+  }
+  @media screen and (max-width: 550px) {
+	.main-header{
+		flex-direction: column;
+	}
+	.logo{
+		margin-bottom: 20px;
+	}
+	.main-navigation-item{
+		margin-top: 40px;
+	    display: none;
+	}
+	.main-navigation-list{
+		display: block;
+		background-color: #fff;
+		 
+		
+	}
+	.main-navigation-list:hover{
+		background-color: #0075bf;
+		color:#fff !important;
+	} 
+	.main-navigation-list a{
+		display: flex;
+		flex: 1;
+		padding: 5px; 
+	}
+	.main-navigation-list a:hover{
+		text-decoration: none;
+		color:#fff; 
+		 
+	}
+	/*Start Main Navigation mobile*/
+	.icon{
+		float: right;
+		display: block; 
+	}
+	.icon span{
+		width: 25px;
+		height: 3px;
+		background-color: #0075bf;
+		display: block;
+		margin: 4px 0;
+	}
+	.clear{
+		clear: both;
+	} 
+	/*End Main Navigation mobile*/
+  }
