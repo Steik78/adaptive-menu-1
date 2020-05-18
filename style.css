@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6{
 	font-weight:normal;
 }
 img{
-
+    
 	max-width:100%;
 }
 .clr{
@@ -153,6 +153,180 @@ img{
 .main-header-form button:last-child:active{
 	box-shadow: 0px 0px 2px 1px rgba(167, 187, 209, 0.7)
 }
+/*////////Start Pop up Sign in/////*/
+.model_window_up{
+	display: none;
+}
+.model_window_in{
+	display: none;
+}
+.container-sign-in{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color: rgba(251, 252, 253, 0.8);
+	text-align: center; 
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+
+}
+.container-sign-in-wrap{
+	display: flex;
+	justify-content: center;
+	border: 2px solid #0075bf;
+	border-radius: 3px;
+	padding: 20px;
+	animation-name: zoom1;
+    animation-duration: .8s;
+}
+
+@keyframes zoom1 {
+    from {transform: rotate(0deg) scale(0)}
+    to {transform: rotate(360deg) scale(1)}
+} 
+.container-sign-in-wrap img{
+    margin-left: 20px; 
+     
+}
+.container-sign-in span:nth-child(1){
+    transform: rotate(-45deg)
+}
+.container-sign-in span:nth-child(2){
+	transform:rotate(45deg)
+}
+.form-sign-in{
+	margin-right: 20px;
+}
+.form-sign-in h2{
+	color:#4737ff;
+	font-size: 2em;	 
+	margin-bottom: 20px;   
+}
+ 
+.form-sign-in input{
+	margin: 10px;
+	padding: 7px;
+	border-color: #4737ff;
+	border-radius: 3px;
+	color:#4737ff;
+	display: block;
+	width: 230px;
+}
+.form-sign-in input::-webkit-input-placeholder { 
+	color: #4737ff; 
+}
+ 
+/*////////End Pop up Sign in/////*/
+
+/*////////Start Pop up Sign up/////*/
+.container-sign-up{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color: rgba(251, 252, 253, 0.8);
+	text-align: center;
+	 
+}
+.container-sign-up h2{
+	color:#4737ff;
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 50px 0;
+}
+.btn-social li{
+	display: inline-block;
+}
+.btn-social a{
+	color:#4a90e2;
+	text-decoration: none;
+	padding: 8px 15px;
+	border: 2px solid #4a90e2;
+	border-radius: 3px;
+	margin: 5px;
+	text-transform: uppercase;
+	font-size: 0.875em;
+}
+.btn-social li:last-child a{
+	padding: 8px 20px;
+}
+
+.container-sign-up p{
+	margin: 40px;
+	color:#4737ff;
+	font-size: 1.125em; 
+}
+.container-sign-up p:nth-child(3)::before, .container-sign-up p:nth-child(3)::after{
+	content: "";
+	display: inline-block;
+	width: 20%;
+	margin: 0 .5em 0 -20%;
+	vertical-align: middle;
+	border-bottom: 1px solid;
+}
+.container-sign-up p:nth-child(3)::after{
+	margin: 0 -20% 0 .5em;
+}
+.form-sign-up{
+	color:#4737ff;
+	max-width: 500px;
+	margin: 0 auto;
+	animation-name: zoom;
+    animation-duration: .8s; 
+}
+@keyframes zoom {
+    from {transform: rotateX(0deg) scale(0)}
+    to {transform: rotateX(360deg) scale(1)}
+} 
+.form-sign-up input{
+	margin: 10px;
+	padding: 7px;
+	border-color: #4737ff;
+	border-radius: 3px;
+	color:#4737ff;
+}
+.form-sign-up input::-webkit-input-placeholder { 
+	color: #4737ff; 
+}
+.btn-sign-up{
+	background-color: #4737ff;
+	color:#fff;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	font-size: 0.875em;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.btn-sign-up:hover{
+	box-shadow: 0px 0px 2px 2px rgba(167, 187, 209, 0.7)
+}
+.btn-sign-up:active{
+	box-shadow: 0px 0px 2px 1px rgba(167, 187, 209, 0.7)
+}
+.close{
+	width: 20px;
+	height:4px;
+	background: #4737ff;
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	cursor: pointer;
+}
+.container-sign-up span:nth-child(4){
+	transform: rotate(45deg)
+}
+.container-sign-up span:nth-child(5){
+	transform: rotate(-45deg)
+}
+/*////////End Pop up Sign up/////*/
 /*--------------End header-------------*/
 
 @media screen and (max-width: 1020px) {
@@ -188,7 +362,7 @@ img{
 		font-size: 1.1em;
 	}
   }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 600px) {
 	.main-header{
 		flex-direction: column;
 	}
@@ -236,4 +410,19 @@ img{
 	}
  
 	/*End Main Navigation mobile*/
+	.container-sign-up h2{
+	 
+		font-size: 2em;
+		margin: 30px 0;
+	}
+    .container-sign-in-wrap{
+		flex-direction: column
+	}
+	.container-sign-in-wrap img{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.form-sign-in{
+		margin-right: 0;
+	}
   }
