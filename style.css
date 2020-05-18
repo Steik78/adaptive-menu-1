@@ -330,6 +330,57 @@ img{
 }
 /*////////End Pop up Sign up/////*/
 /*--------------End header-------------*/
+
+/*--------------Start main-------------*/
+main{
+	max-width: 1440px;
+	margin: 0 auto;
+	 
+} 
+/*///////////Start block Contact//////////*/
+.contact{
+	 
+	text-align: center;
+	background-color: #fff;
+	padding: 50px; 
+}
+.contact-header{
+	color:#4737ff;
+	font-size: 1.125em;
+	max-width: 630px; 
+    margin: 0 auto;
+}
+.contact-header h2{
+	font-size: 2em;
+	margin-bottom: 20px !important;
+}
+ 
+.contact-header-item{
+	list-style: none;
+	margin: 40px 0 !important;
+}
+.contact-header-list{
+	display: inline-block;
+	margin: 10px 15px;
+}
+.contact-header-list a{
+	color: #4737ff;
+	font-size: 1.125em;
+	text-decoration: none;
+}
+.contact-header-list a:hover{
+	text-decoration: underline;
+}
+.contact article iframe{
+	width: 100%;
+	height: 480px;
+	max-width: 980px;
+}
+/*///////////End block Contact//////////*/
+
+/*--------------End main-------------*/ 
+
+/*--------------Start footer--------------*/
 .main-footer{ 
 	display: flex;
 	flex-direction: column;
@@ -346,6 +397,13 @@ img{
 .main-footer p{
 	margin: 10px 0;
 }
+.main-footer p a{
+	color:#4737ff;
+	text-decoration: none;
+}
+.main-footer p a:hover{ 
+	text-decoration: underline;
+}
 .main-footer-item{
 	list-style: none;
 	margin: 0;
@@ -356,7 +414,6 @@ img{
 	margin: 5px;
 }
  
-/*--------------Start footer--------------*/
 /*--------------End footer--------------*/
 
 @media screen and (max-width: 1020px) {
@@ -426,6 +483,7 @@ img{
 		color:#fff; 
 		 
 	}
+	/*===================================================*/
 	/*Start Main Navigation mobile*/
 	.icon{
 		float: right;
@@ -440,8 +498,9 @@ img{
 	}
  
 	/*End Main Navigation mobile*/
+    /*===================================================*/
+	/*Start model window mobile*/
 	.container-sign-up h2{
-	 
 		font-size: 2em;
 		margin: 30px 0;
 	}
@@ -455,4 +514,26 @@ img{
 	.form-sign-in{
 		margin-right: 0;
 	}
+	/*End model window mobile*/
+	/*===================================================*/
+	/*Start block Contact mobile*/
+	.contact-header h2{
+		font-size: 1.5em;
+	 
+	}
+	.contact-header span{
+		font-size: 1em;
+	}
+	.contact article iframe{
+		 
+		height: 350px;
+		 
+	}
+	/*End block Contact mobile*/
+	/*===================================================*/
+	/*Start footer mobile*/
+	.main-footer p{
+		font-size: 0.85em;
+	}
+	/*End footer mobile*/
   }
