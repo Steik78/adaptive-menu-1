@@ -343,7 +343,7 @@ main{
 /*///////////Start block Designe//////////*/
 .designe{
 	text-align: center;
-	padding: 10px;
+    color:#4737ff;
 }
 .designe h2{
 	color:#4737ff;
@@ -361,6 +361,49 @@ main{
 	letter-spacing: 2px;
 }
 /*///////////End block Designe//////////*/
+.blog h2{
+	font-size: 2em;
+	margin: 40px 0 20px 0; 
+}
+.blog h3{
+	margin: 30px 0 10px 0;
+	font-size: 1.375em;
+	font-weight: 700;
+}
+.blog ul{
+	list-style: none;
+}
+ 
+.blog-item, .blog-list-item{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: left;
+}
+.blog-list{
+	flex-basis: 48%;
+	margin: 0 auto;
+}
+.blog-list:first-child{
+	padding: 10px;
+} 
+.card{
+	flex-basis: 48%;
+	margin: 0 auto;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.card p:last-child, .blog-list p:last-child{
+	margin: 20px 0 0 0;
+} 
+.card p, .blog-list p{
+	display: flex;
+	align-items: center
+}
+.card p img, .card p span, .blog-list p img, .blog-list p span{
+	margin-right: 7px;
+}
+/*///////////End block Blog//////////*/
 /*///////////Start block About//////////*/
 .about{
 	color:#4737ff;
@@ -540,6 +583,9 @@ main{
 	.about-list-header h3{
 		font-size: 1.2em;
 	} 
+	.blog-item{
+		flex-direction: column;
+	}
   }
   @media screen and (max-width: 600px) {
 	.main-header{
@@ -640,5 +686,8 @@ main{
 	}
 	.about-list:last-child{
 		margin: auto;
+	}
+	.blog-list-item{
+		flex-direction: column;
 	}
   }
