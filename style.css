@@ -340,6 +340,27 @@ main{
 	margin: 0 auto;
 	 
 } 
+/*///////////Start block Designe//////////*/
+.designe{
+	text-align: center;
+	padding: 10px;
+}
+.designe h2{
+	color:#4737ff;
+	font-size: 2em;
+	margin: 30px 0;
+}
+.designe-btn{
+	background-color: #4737ff;
+	color:#fff;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	padding: 13px 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+/*///////////End block Designe//////////*/
 /*///////////Start block About//////////*/
 .about{
 	color:#4737ff;
@@ -589,7 +610,7 @@ main{
 	/*===================================================*/
 	/*Start block Contact mobile*/
 	.contact-header h2{
-		font-size: 1.5em;
+		font-size: 2em;
 	 
 	}
 	.contact-header span{
