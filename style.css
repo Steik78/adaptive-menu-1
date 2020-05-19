@@ -1,4 +1,7 @@
 /* --------------- reset.css --------------- */
+*{
+	box-sizing: border-box;
+}
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -337,6 +340,68 @@ main{
 	margin: 0 auto;
 	 
 } 
+/*///////////Start block About//////////*/
+.about{
+	color:#4737ff;
+	font-size: 1.125em;
+	padding: 0 10px;
+}
+.about-header{
+	text-align: center;
+}
+.about-header h2{
+	font-size: 2em;
+	margin: 50px 0 20px 0;
+}
+.about-item{
+	display: flex;
+	flex-direction: row;
+    align-items: stretch; 
+	list-style: none;
+	margin: 40px 0;
+}
+.about-list{
+	background-color: #f5f4ff;
+	padding: 25px;
+	flex-basis: 35%;
+	min-height: auto; 
+	border: 1px solid #4737ff;
+	border-radius: 3px; 
+}
+.about-list:first-child{
+	margin: auto 10px auto auto
+}
+.about-list:last-child{
+	margin: auto auto auto 10px
+}
+
+.about-list-header{
+	overflow: hidden;
+	 
+}
+.about-list-header img{
+	float: left;
+	width: 80px;
+	height: auto;
+	margin-right: 20px;
+
+}
+.about-list-header h3{
+	margin-top: 20px;
+	font-size: 1.375em;
+	font-weight: 700;
+}
+.about-list-content{
+	margin: 20px 0;
+	line-height: 1.5;
+}
+.about-list-footer img{
+	float: right;
+	margin-left: 10px;
+	 
+}
+/*///////////End block About//////////*/
+/*===========================================================*/
 /*///////////Start block Contact//////////*/
 .contact{
 	 
@@ -355,20 +420,20 @@ main{
 	margin-bottom: 20px !important;
 }
  
-.contact-header-item{
+.contact-item{
 	list-style: none;
 	margin: 40px 0 !important;
 }
-.contact-header-list{
+.contact-list{
 	display: inline-block;
 	margin: 10px 15px;
 }
-.contact-header-list a{
+.contact-list a{
 	color: #4737ff;
 	font-size: 1.125em;
 	text-decoration: none;
 }
-.contact-header-list a:hover{
+.contact-list a:hover{
 	text-decoration: underline;
 }
 .contact article iframe{
@@ -448,6 +513,12 @@ main{
 	.main-navigation-list a{
 		font-size: 1.1em;
 	}
+	.about{
+		font-size: 1em;
+	}
+	.about-list-header h3{
+		font-size: 1.2em;
+	} 
   }
   @media screen and (max-width: 600px) {
 	.main-header{
@@ -526,7 +597,7 @@ main{
 	}
 	.contact article iframe{
 		 
-		height: 350px;
+		height: 300px;
 		 
 	}
 	/*End block Contact mobile*/
@@ -536,4 +607,17 @@ main{
 		font-size: 0.85em;
 	}
 	/*End footer mobile*/
+	.about-item{
+		flex-direction: column;
+		 
+	}
+	.about-list{
+		margin-bottom: 30px !important;
+	} 
+	.about-list:first-child{
+		margin: auto;
+	}
+	.about-list:last-child{
+		margin: auto;
+	}
   }
